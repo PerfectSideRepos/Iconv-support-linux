@@ -1,0 +1,4 @@
+module iconv [system] {
+  header "ciconv.h"
+  export *
+}
