@@ -25,8 +25,8 @@ class iconvTests: XCTestCase {
         }
         print(str)
         XCTAssertEqual(str, "中国")
-        src.deinitialize()
-        tag.deinitialize()
+        src.deallocate(capacity: sz)
+        tag.deallocate(capacity: sz)
         iconv_close(cd)
     }
 
